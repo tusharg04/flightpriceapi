@@ -12,6 +12,9 @@ spark = SparkSession.builder.appName("FlightAPI").getOrCreate()
 model_path = "flight_fare_gbt_model"
 model = PipelineModel.load(model_path)
 
+@app.route('/')
+def home():
+    return jsonify({"message": "Flight Price API is running!"})
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.json
