@@ -1,4 +1,4 @@
-flask==3.1.0
-pandas==2.2.3
-pyspark==3.5.5
-gunicorn==23.0.0
+flask
+pyspark
+pandas
+gunicorn
